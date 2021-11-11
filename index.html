@@ -18,9 +18,13 @@
 			
 				<h1 class="site-title">Challenger.</h1>
 				
-				<nav class="site-navigation">
-					<ul class="navlist navlist-inline">
-						<li class="navlist-item">
+				<!-- TODO for mobile we can use burger menu 
+					because now links breaks under each other -->
+					<nav class="site-navigation">
+						<ul class="navlist navlist-inline">
+							<li class="navlist-item">
+							<!-- TODO Use 'title' attribute on 'a' elements -->
+							<!-- TODO This applies to all places we have 'a' tag  -->
 							<a href="#">Home</a>
 						</li>
 						<li class="navlist-item">
@@ -37,6 +41,9 @@
 			<section class="section-fullwidth section-challenge">
 				<div class="row row-slim">
 					<div class="challenge-message">
+						<!-- TODO From semantic can we use text tags (headings, 'p' and etc.)
+							for the texts, not a 'div' -->
+						<!-- TODO This applies to all places we have direct text in 'div'  -->
 						<div class="challenge-message-title">
 							Integrations, AWS
 						</div>
@@ -48,6 +55,10 @@
 						In order to complete the task, make sure to read this description. In React Hooks, you can have multiple useEffect functions. This is a great feature because, if we analyze how to write clean code, you’ll see that functions should serve a single purpose (much like how a sentence should communicate one idea only).
 					</div>
 					<div class="challenge-footer">
+						<!-- TODO It is disabled but i can still click it
+							Hint: you can disabled 'pointer events' on 'a' tag. 
+								  And add 'cursor: not-allowed' on his parent.
+						-->
 						<div class="challenge-buttons">
 							<a href="#" class="button is-disabled">CLOSED</a>
 						</div>
@@ -55,6 +66,8 @@
 							<div class="challenge-participants-number">8 participants</div>
 							<div class="challenge-participants-avatars">
 								<div class="challenge-participants-avatar">
+									<!-- TODO Use 'all' attribute on 'img' elements -->
+									<!-- TODO This applies to all places we have 'img' tag  -->
 									<img src="dist/images/chan-1.png" />
 								</div>
 								<div class="challenge-participants-avatar">
@@ -79,6 +92,7 @@
 				<div class="row row-slim">
 						<h2 class="section-title" >CHALLENGE has <strong>ENDED!</strong></h2>
 				</div>
+				<!-- TODO class 'leaderboard-container' is not used in 'css', do we need it ? -->
 				<div class="row leaderboard-container">
 					<div class="leaderboard-participants">
 						<div class="leaderboard-participants-score">

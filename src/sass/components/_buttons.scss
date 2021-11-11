@@ -13,6 +13,8 @@
     text-transform: uppercase;
     text-align: center;
 
+    // TODO Can we make it to be 'button-disabled' or 'button-is-disabled'
+    // because 'is-disabled' sound more globally not only for button
     &.is-disabled {
         --btn-color: var(--color-primary-disabled);
     }

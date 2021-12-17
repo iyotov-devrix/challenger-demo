@@ -1,4 +1,8 @@
 :root {
+    // TODO Can we also here add the breakpoints as variables ?
+    // And then replace in all media queries with them
+    // @media (max-width: 36em); @media (max-width: 27em); etc.
+
     //colors
     --color-primary: #000000;
     --color-primary-disabled: rgb(225,225,225);

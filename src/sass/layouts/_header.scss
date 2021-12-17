@@ -1,5 +1,7 @@
 .site-header {
     background-color: var(--color-header-bg);
+    // TODO The header with this padding come: 368px - in desing is 285px
+    // please correct it
     padding-bottom: 18em;
     font-family: var(--font-secondary);
 
@@ -7,10 +9,13 @@
         font-size: 1.25em;
         margin: 0;
         padding: 0;
+        // TODO line-height is different
         line-height: 1.1;
     }
 
     @media (max-width: 36em) {
+        // TODO You can use variable for the padding-bottom 
+        // and change it in different media queries
         padding-bottom: 12em;
     }
 

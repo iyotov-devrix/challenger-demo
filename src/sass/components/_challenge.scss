@@ -4,7 +4,13 @@
         border: 3px solid var(--color-primary);
         border-radius: 0.9375em;
         box-shadow: 20px 20px 0px var(--color-primary);
+<<<<<<< HEAD
         margin-top: -9em; //we all knowthat the gradient backgroud of the parent section would be better
+=======
+        margin-top: -9em;
+        // TODO Can you write a comment what is this number '-20px'
+        // This will help on other people. Because now is "magic number".
+>>>>>>> 7f2797428fe7c58693566ba05030e72ae384142a
         margin-bottom: calc( var(--gap-big) + 20px);
         padding: 1.5em 2.75em  1.75em;
         font-family: var(--font-secondary);
@@ -20,6 +26,8 @@
         }
 
         @media (max-width: 27em) {
+            // TODO You can use variables for the changeable values
+            // and change it in different media queries
             padding: 1.25em 1.5em;
 
             &-text {
@@ -45,6 +53,7 @@
         align-items: flex-end;
 
         &-number {
+            // TODO font-size is 16px in the design is 14px;
             font-weight: 700;
             margin-bottom: 0.125em;
         }
@@ -64,6 +73,8 @@
             min-width: 3.375em;
 
             img {
+                // TODO Here we also need 'border-radius' because i upload
+                // an image that is not rounded will be a square
                 max-width: 100%;
             }
 
@@ -103,11 +114,14 @@
     }
 }
 
+
+// TODO Splitting 'leaderboard' in new 'scss' would be better
 .leaderboard-participants {
     display: flex;
     background: #FFFFFF;
     border: 3px solid var(--color-primary);
     border-radius: 0.9375em;
+    // TODO By design the padding is bigger (48px all sides)
     padding: var(--section-gap);
     margin-bottom: var(--gap-xsmall);
     cursor: pointer;
@@ -124,11 +138,14 @@
 
         .challenge-participants-avatar {
             margin-right: 1em;
+            // TODO Here we need 'border-radius' because i upload
+            // an image that is not rounded will be a square
         }
     }
 
     &-score {
         span {
+            // TODO 'line-height' need to be '1'
             font-size: 2em;
         }
     }
@@ -159,6 +176,7 @@
         width: 1em;
         height: 1em;
         margin-right: 0.5em;
+        // TODO Why we need 'inline' on 'span' ?
         display: inline;
         background-repeat: no-repeat;
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.9375 27C23.9375 30 20.2917 31.5 16 31.5C11.7083 31.5 8.04167 30 5 27C2 23.9583 0.5 20.2917 0.5 16C0.5 11.7083 2 8.0625 5 5.0625C8.04167 2.02083 11.7083 0.5 16 0.5C20.2917 0.5 23.9375 2.02083 26.9375 5.0625C29.9792 8.0625 31.5 11.7083 31.5 16C31.5 20.2917 29.9792 23.9583 26.9375 27ZM2.5 16C2.5 19.75 3.8125 22.9375 6.4375 25.5625C9.10417 28.1875 12.2917 29.5 16 29.5C19.75 29.5 22.9375 28.1875 25.5625 25.5625C28.1875 22.8958 29.5 19.7083 29.5 16C29.5 12.25 28.1667 9.0625 25.5 6.4375C22.875 3.8125 19.7083 2.5 16 2.5C12.25 2.5 9.0625 3.83333 6.4375 6.5C3.8125 9.125 2.5 12.2917 2.5 16ZM8.25 15.25L15.5 8C15.8333 7.66667 16.1667 7.66667 16.5 8L23.75 15.25C24.0833 15.5833 24.0833 15.9167 23.75 16.25L23.3125 16.6875C22.9375 17.0625 22.5833 17.0625 22.25 16.6875L17.0625 11.375V23.25C17.0625 23.75 16.8125 24 16.3125 24H15.6875C15.1875 24 14.9375 23.75 14.9375 23.25V11.375L9.75 16.6875C9.41667 17.0625 9.0625 17.0833 8.6875 16.75L8.25 16.3125C7.91667 15.9375 7.91667 15.5833 8.25 15.25Z' fill='%23000000'/%3E%3C/svg%3E");

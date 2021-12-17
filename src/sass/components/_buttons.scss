@@ -15,5 +15,10 @@
 
     &.is-disabled {
         --btn-color: var(--color-primary-disabled);
+        cursor: not-allowed;
+        
+        &:hover{
+            opacity: 1;
+        }
     }
 }

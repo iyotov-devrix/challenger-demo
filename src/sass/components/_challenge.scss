@@ -4,13 +4,7 @@
         border: 3px solid var(--color-primary);
         border-radius: 0.9375em;
         box-shadow: 20px 20px 0px var(--color-primary);
-<<<<<<< HEAD
         margin-top: -9em; //we all knowthat the gradient backgroud of the parent section would be better
-=======
-        margin-top: -9em;
-        // TODO Can you write a comment what is this number '-20px'
-        // This will help on other people. Because now is "magic number".
->>>>>>> 7f2797428fe7c58693566ba05030e72ae384142a
         margin-bottom: calc( var(--gap-big) + 20px);
         padding: 1.5em 2.75em  1.75em;
         font-family: var(--font-secondary);
